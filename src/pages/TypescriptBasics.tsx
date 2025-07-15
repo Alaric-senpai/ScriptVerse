@@ -2,6 +2,7 @@ import CodeElement from '../components/CodeElement';
 import Header from '../components/Header';
 import ContentGrid from '../components/ContentGrid';
 import { type NavLinkItem } from '@/lib/constants'; 
+import Seperator from '@/components/Seperator';
 
 export const typescriptNavLinks: NavLinkItem[] = [
   { id: "intro", label: "🚀 Introduction to TypeScript" },
@@ -197,7 +198,7 @@ const TypescriptBasicsContent = () => {
         </p>
       </section>
 
-      <hr className="border-t border-blue-900/50 my-8" />
+        <Seperator />
 
       <section id="basic-types">
         <h2 className="text-2xl font-semibold text-blue-300 mb-2">2. Basic Types in TypeScript</h2>
