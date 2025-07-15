@@ -105,7 +105,6 @@ const UseEffectContent = () => {
         <p className="text-blue-100/80 mb-4">
           Think of it as React's way of handling "after-render" logic. Whenever your component renders (or re-renders), `useEffect` runs its callback function, letting you interact with the outside world.
         </p>
-        <CodeElement language="css" code={basicCssCode} title="Example: Global CSS Variables" />
         <p className="text-blue-100/80 mt-4">
           While the above CSS code isn't a direct `useEffect` example, it illustrates how you might define global styles that your React components would then utilize, often needing `useEffect` for DOM interactions if you were to dynamically change them.
         </p>
