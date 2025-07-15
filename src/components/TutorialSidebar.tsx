@@ -9,7 +9,7 @@ type TutorialSidebarProps = {
 
 const TutorialSidebar = ({ title, links }: TutorialSidebarProps) => {
   return (
-    <div className="w-2/5 bg-slate-900/50 border-white/20 h-max shadow-md backdrop-blur-md border-2 p-3 rounded-md sticky top-4">
+    <div className=" w-full md:w-2/5 hidden md:block bg-slate-900/50 border-white/20 h-max shadow-md backdrop-blur-md border-2 p-3 rounded-md sticky top-4">
       <h2 className="text-xl font-bold mb-4 text-blue-200">{title}</h2>
       <nav>
         <ul className="space-y-2">

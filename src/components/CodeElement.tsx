@@ -25,7 +25,7 @@ const CodeElement = ({ code, language = "tsx", title }: CodeElementProps) => {
 
   return (
     <Card className="p-0 bg-blue-950/10 hover:shadow-md duration-300 cursor-pointer hover:border-pink-500/30 hover:shadow-pink-400/20 border-blue-950/20 border-2 w-full font-mono text-sm text-blue-100 shadow-md overflow-hidden">
-      <CardHeader className="flex items-center justify-between min-h-12 h-max p-4 pb-3 bg-blue-950/30 border-b border-blue-950/20">
+      <CardHeader className="flex flex-wrap md:flex-nowrap items-center justify-between min-h-12 h-max p-4 pb-3 bg-blue-950/30 border-b border-blue-950/20">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500 shadow-md" />
           <div className="w-3 h-3 rounded-full bg-yellow-400 shadow-md" />

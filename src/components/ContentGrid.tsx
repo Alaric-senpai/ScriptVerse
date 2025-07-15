@@ -34,7 +34,7 @@ const ContentGrid = ({ tutorialContent, navigationLinks, navigationTitle }: Cont
     }, [location]);
 
     // Determine content width based on whether there are navigation links
-    const contentWidthClass = navigationLinks && navigationLinks.length > 0 ? 'w-3/5' : 'w-full';
+    const contentWidthClass = navigationLinks && navigationLinks.length > 0 ? ' w-full md:w-3/5' : 'w-full';
 
     return (
         <div className='w-full gap-5 flex max-w-7xl mx-auto py-5'> {/* Added py-5 for top/bottom padding */}
