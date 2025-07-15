@@ -4,19 +4,6 @@ import Header from '../components/Header'; // Corrected path
 import ContentGrid from '../components/ContentGrid'; // Corrected path
 import { useEffectNavLinks } from '@/lib/constants'; // Import navLinks and type
 
-// --- Code Snippets (kept here or move to a separate constants/data file if very large) ---
-const basicCssCode = `:root {
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.141 0.005 285.823);
-  /* ... more CSS variables ... */
-}
-
-.dark {
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  /* ... more dark mode CSS variables ... */
-}`;
 
 const useEffectBasicCode = `import React, { useEffect, useState } from 'react';
 
