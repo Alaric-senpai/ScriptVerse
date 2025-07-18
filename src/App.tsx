@@ -3,6 +3,14 @@ import Home from "./Home";
 import Useeffect from "./pages/Useeffect";
 import ScriptVerseNavbar from "./components/ScriptVerseNavbar"; // Corrected import path for Navbar
 import TypescriptBasics from "./pages/TypescriptBasics";
+import TailwindLayout from "./pages/tailwindcss";
+import TailwindIntro from "./pages/tailwind/TailwindIntro";
+import TailwindInstallation from "./pages/tailwind/installation";
+import TailwindCoreConcepts from "./pages/tailwind/CoreConcepts";
+import BuildingUIComponents from "./pages/tailwind/CommonUi";
+import TailwindOptimization from "./pages/tailwind/Optimizing";
+import TailwindCustomization from "./pages/tailwind/Customixation";
+
 
 function App() {
   return (
@@ -18,6 +26,15 @@ function App() {
           {/* Example placeholders for future pages: */}
           {/* <Route path="/async-js" element={<div>Async JS Content</div>} /> */}
           <Route path="/typescript-basics" element={<TypescriptBasics />} />
+          <Route path="/tailwindcss-essentials" element={<TailwindLayout />}>
+            <Route index element={<TailwindIntro />} />
+            <Route path="installation" element={<TailwindInstallation />} />
+            <Route path="core-concepts" element={<TailwindCoreConcepts />} />
+            <Route  path="common-ui" element={<BuildingUIComponents />} />
+            <Route path="optimization" element={<TailwindOptimization />} />
+            <Route path="customization" element={<TailwindCustomization />} />
+          </Route>
+
         </Routes>
       </div>
     // </Router>

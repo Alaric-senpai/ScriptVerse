@@ -1,15 +1,30 @@
-import CodeElement from '../components/CodeElement';
+import CodeElement from '@/components/CodeElement';
 import Header from '../components/Header';
 import ContentGrid from '../components/ContentGrid';
 import { type NavLinkItem } from '@/lib/constants'; 
 import Seperator from '@/components/Seperator';
 
 export const typescriptNavLinks: NavLinkItem[] = [
-  { id: "intro", label: "🚀 Introduction to TypeScript" },
-  { id: "basic-types", label: "💡 Basic Types" },
-  { id: "interfaces", label: "🤝 Interfaces" },
-  { id: "functions", label: "⚙️ Functions" },
-  { id: "compilation", label: "📦 Compilation & Setup" },
+  {
+    id: "intro", label: "🚀 Introduction to TypeScript",
+    type: 'id'
+  },
+  {
+    id: "basic-types", label: "💡 Basic Types",
+    type: 'id'
+  },
+  {
+    id: "interfaces", label: "🤝 Interfaces",
+    type: 'id'
+  },
+  {
+    id: "functions", label: "⚙️ Functions",
+    type: 'id'
+  },
+  {
+    id: "compilation", label: "📦 Compilation & Setup",
+    type: 'id'
+  },
 ];
 
 

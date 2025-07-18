@@ -13,6 +13,12 @@ const tutorialPoints = [
         path: '/typescript-basics',
         description: 'Learn static typing to build robust and scalable applications.',
         icon: 'TS'
+    },
+    {
+      name: 'Get familiar with TailwindCSS',
+      path: '/tailwindcss-essentials',
+      description: 'Learn the basics of tailwindcss',
+      icon: 'CSS'
     }
 ]
 

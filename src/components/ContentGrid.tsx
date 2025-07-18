@@ -14,26 +14,27 @@ type ContentGridProps = {
 const ContentGrid = ({ tutorialContent, navigationLinks, navigationTitle }: ContentGridProps) => {
     const location = useLocation();
 
-    // Scroll to section logic
-    useEffect(() => {
-        if (location.hash) {
-            let elem = document.getElementById(location.hash.slice(1));
-            if (elem) {
-                // Adjust scroll position to account for sticky navbar (optional, but good UX)
-                const navbarHeight = 64; // Assuming your navbar height is 64px (h-16)
-                const elementPosition = elem.getBoundingClientRect().top + window.scrollY;
-                window.scrollTo({
-                    top: elementPosition - navbarHeight - 20, // 20px padding
-                    behavior: "smooth"
-                });
-            }
-        } else {
-            // Scroll to top if no hash is present or on initial load
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    }, [location]);
+useEffect(() => {
+  const handleHashScroll = () => {
+    if (location.hash) {
+      const id = location.hash.slice(1);
+      const element = document.getElementById(id);
+      if (element) {
+        const navbarHeight = 64;
+        const top = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: top - navbarHeight - 20,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
 
-    // Determine content width based on whether there are navigation links
+  // Delay scroll to allow layout/render completion
+  setTimeout(() => handleHashScroll(), 100);
+
+}, [location]);
+
     const contentWidthClass = navigationLinks && navigationLinks.length > 0 ? ' w-full md:w-3/5' : 'w-full';
 
     return (
